@@ -1,0 +1,20 @@
+# --------------------------
+# pgbench configuration file
+# --------------------------
+
+
+CREATEDB=`which createdb`           # createdb command PATH
+DROPDB=`which dropdb`               # dropdb command PATH
+PSQL=`which psql`                   # psql command PATH
+PGBENCH=`which pgbench`             # pgbench command PATH
+
+HOST=''                             # DB host name
+USER=''                             # DB user name
+PORT=''                             # DB port number
+DB=''                               # DB used in pgbench
+
+CLIENT=30                           # Number of simultaneous connections
+TRANSACTION=30                      # Number of simultaneous transactions
+
+LOG_DIR='log'                       # Log dir
+BENCH_LOG="${LOG_DIR}/pgbench.log"  # Log file name
