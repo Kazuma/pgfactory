@@ -1,6 +1,6 @@
 #! /bin/sh
 
-. ../.factoryrc
+. ./.factoryrc
 
 gnuplot <<EOF
 set ylabel "TPS"

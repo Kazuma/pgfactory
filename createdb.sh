@@ -4,7 +4,7 @@ set -e
 
 # load config file
 
-  . ../.factoryrc
+  . ./.factoryrc
 
 # create database
 

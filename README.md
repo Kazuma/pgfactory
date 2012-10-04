@@ -1,6 +1,6 @@
 # pebench factory
 
-pgbench するときに使うスクリプト置き場
+pgbench とかで使うスクリプト置き場
 
 # LICENSE
 

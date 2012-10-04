@@ -16,5 +16,9 @@ DB=''                               # DB used in pgbench
 CLIENT=30                           # Number of simultaneous connections
 TRANSACTION=30                      # Number of simultaneous transactions
 
+TRY=12                              # Try pgbench count
+
 LOG_DIR='log'                       # Log dir
 BENCH_LOG="${LOG_DIR}/pgbench.log"  # Log file name
+
+BENCH_OPTION='-N'                   # pgbench option
