@@ -8,4 +8,4 @@ set -e
 
 # create database
 
-  $CREATEDB $HOST $USER $PORT $DB
+  ${CREATEDB} -h ${HOST} -U ${USER} -p ${PORT} ${DB}

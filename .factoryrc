@@ -3,22 +3,26 @@
 # --------------------------
 
 
-CREATEDB=`which createdb`           # createdb command PATH
-DROPDB=`which dropdb`               # dropdb command PATH
-PSQL=`which psql`                   # psql command PATH
-PGBENCH=`which pgbench`             # pgbench command PATH
+readonly CREATEDB=`which createdb`          # createdb command PATH
+readonly DROPDB=`which dropdb`              # dropdb command PATH
+readonly PSQL=`which psql`                  # psql command PATH
+readonly PGBENCH=`which pgbench`            # pgbench command PATH
 
-HOST=''                             # DB host name
-USER=''                             # DB user name
-PORT=''                             # DB port number
-DB=''                               # DB used in pgbench
+readonly HOST=''                            # DB host name
+readonly USER=''                            # DB user name
+readonly PORT=''                            # DB port number
+readonly DB=''                              # DB used in pgbench
 
-CLIENT=30                           # Number of simultaneous connections
-TRANSACTION=30                      # Number of simultaneous transactions
+readonly SCALE_FACTOR=10                    # Number of simultaneous connections
+readonly FILLFACTOR=100                     # Number of simultaneous connections
 
-TRY=12                              # Try pgbench count
+readonly CLIENT=30                          # Number of simultaneous connections
+readonly TRANSACTION=30                     # Number of simultaneous transactions
 
-LOG_DIR='log'                       # Log dir
-BENCH_LOG="${LOG_DIR}/pgbench.log"  # Log file name
+readonly TRY=12                             # Try pgbench count
 
-BENCH_OPTION='-N'                   # pgbench option
+readonly LOG_DIR='log'                      # Log dir
+readonly BENCH_LOG="${LOG_DIR}/pgbench.log"	# Log file name
+
+readonly BENCH_OPTION='-N'                  # pgbench option
+
