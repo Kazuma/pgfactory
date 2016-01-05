@@ -1,0 +1,28 @@
+# --------------------------
+# pgbench configuration file
+# --------------------------
+
+
+readonly CREATEDB=`which createdb`          # createdb command PATH
+readonly DROPDB=`which dropdb`              # dropdb command PATH
+readonly PSQL=`which psql`                  # psql command PATH
+readonly PGBENCH=`which pgbench`            # pgbench command PATH
+
+readonly HOST=''                            # DB host name
+readonly USER=''                            # DB user name
+readonly PORT=''                            # DB port number
+readonly DB=''                              # DB used in pgbench
+
+readonly SCALE_FACTOR=10                    # Number of simultaneous connections
+readonly FILLFACTOR=100                     # Number of simultaneous connections
+
+readonly CLIENT=30                          # Number of simultaneous connections
+readonly TRANSACTION=30                     # Number of simultaneous transactions
+
+readonly TRY=12                             # Try pgbench count
+
+readonly LOG_DIR='log'                      # Log dir
+readonly BENCH_LOG="${LOG_DIR}/pgbench.log"	# Log file name
+
+readonly BENCH_OPTION='-N'                  # pgbench option
+
