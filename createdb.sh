@@ -8,8 +8,8 @@ set -e
 
 # create database
 
-  ${CREATEDB} -h ${HOST} -U ${USER} -p ${PORT} ${DB}
+  ${CREATEDB} --host=${HOST} --port=${PORT} --username=${USER} ${DB}
 
 # initialize pgbench
 
-  ${PGBENCH} -i -s ${SCALE_FACTOR} -F ${FILLFACTOR} -h ${HOST} -U ${USER} -p ${PORT} ${DB}
+  ${PGBENCH} --initialize --scale=${SCALE_FACTOR} --fillfactor=${FILLFACTOR} --host=${HOST} --port=${PORT} --username=${USER} ${DB}

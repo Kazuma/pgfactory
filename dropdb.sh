@@ -8,4 +8,4 @@ set -e
 
 # drop database
 
-  ${DROPDB} -h ${HOST} -U ${USER} -p ${PORT} ${DB}
+  ${DROPDB} --host=${HOST} --port=${PORT} --username=${USER} ${DB}

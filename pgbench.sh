@@ -11,7 +11,7 @@
   [ ! -d ./${LOG_DIR} ] && mkdir ./${LOG_DIR}
 
   pgbench() {
-      ${PGBENCH} -c ${CLIENT} -t ${TRANSACTION} -h ${HOST} -p ${PORT} -U ${USER} ${BENCH_OPTION} ${DB}
+      ${PGBENCH} --client=${CLIENT} --transactions=${TRANSACTION} --host=${HOST} --port=${PORT} --username=${USER} ${BENCH_OPTION} ${DB}
   }
 
   for count in $( seq ${TRY} )
